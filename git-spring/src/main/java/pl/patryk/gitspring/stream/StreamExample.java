@@ -28,12 +28,13 @@ public class StreamExample {
         colors.stream()
                 .filter(s -> {
                     boolean test = s.length() >= 4;
-                    log.info("testing object [{}], passed ? [{}]", s, test);
+                    log.info("testing object [{}] - passed ? [{}]", s, test);
                     return test;} )
-                .map(s -> {
+                .map(s ->{
                     log.info("mapping object [{}]", s);
                     return  s.length();})
                 .collect(Collectors.toList())
                 .forEach(integer -> System.out.println(("number: " + integer)));
+
     }
 }
