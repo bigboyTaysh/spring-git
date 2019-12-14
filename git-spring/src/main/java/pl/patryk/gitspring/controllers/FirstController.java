@@ -14,4 +14,10 @@ public class FirstController {
         model.addAttribute("person", new Person("Patryk", "Wolski", 22).get());
         return "person";
     }
+
+    @GetMapping(value = "/name")
+    public String getUser2(Model model) throws Exception {
+        model.addAttribute("person", new Person("Patryk", "Wolski", 22).getName());
+        return "person";
+    }
 }

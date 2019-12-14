@@ -14,4 +14,8 @@ public class Person {
     public String get(){
         return name + " " + surname + " " + Integer.toString(age);
     }
+
+    public String getName() {
+        return name;
+    }
 }
