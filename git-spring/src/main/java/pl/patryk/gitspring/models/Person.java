@@ -1,4 +1,4 @@
-package pl.patryk.gitspring;
+package pl.patryk.gitspring.models;
 
 public class Person {
     public String name;
