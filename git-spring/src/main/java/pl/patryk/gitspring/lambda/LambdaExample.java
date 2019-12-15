@@ -16,4 +16,6 @@ public class LambdaExample {
                                            Calculations calculations){
         return calculations.calc(first, second);
     }
+
+
 }
