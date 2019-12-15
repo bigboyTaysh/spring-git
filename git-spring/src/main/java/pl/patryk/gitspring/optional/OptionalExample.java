@@ -13,7 +13,6 @@ public class OptionalExample {
         maybeNick.ifPresent(
                 nick -> System.out.println("mam nick" + nick)
         );
-
     }
 
     private static Optional<String> findNick() {
