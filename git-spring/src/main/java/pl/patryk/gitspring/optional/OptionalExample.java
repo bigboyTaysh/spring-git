@@ -9,7 +9,8 @@ public class OptionalExample {
         if (maybeNick.isPresent()) {
             System.out.println(maybeNick.get());
         }
-//nowy sposob lambda
+
+        //nowy sposob lambda
         maybeNick.ifPresent(
                 nick -> System.out.println("mam nick" + nick)
         );
